@@ -1,0 +1,32 @@
+@import '@/styles/globals';
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding: 20px 40px;
+}
+
+.phoneIcons {
+  width: 28px;
+  height: 28px;
+  stroke-width: 1.5px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: $base-color;
+  transition: 0.2s ease-in-out all;
+
+  &:hover {
+    letter-spacing: 0.2px;
+
+    & > .phoneIcons {
+      stroke-width: 2px;
+    }
+  }
+}

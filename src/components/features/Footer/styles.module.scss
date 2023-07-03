@@ -1,0 +1,12 @@
+@import '@/styles/globals.scss';
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+}
