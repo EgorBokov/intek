@@ -1,4 +1,4 @@
-import { FC, ReactElement } from 'react';
+import { ReactElement } from 'react';
 import { Header } from '@/components/widgets/Header';
 import { Footer } from '@/components/features/Footer';
 import { ApplicationContainer } from '@/components/features/ApplicationContainer';
@@ -15,11 +15,11 @@ const montserrat = Montserrat({
     style: ['normal', 'italic'],
 });
 
-interface IApplicationLayoutProps {
+type IApplicationLayoutProps = {
     children: ReactElement;
-}
+};
 
-export const ApplicationLayout: FC<IApplicationLayoutProps> = ({ children }) => {
+export const ApplicationLayout = ({ children }: IApplicationLayoutProps) => {
     return (
         <>
             <Head>

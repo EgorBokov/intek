@@ -2,23 +2,35 @@ import Image from 'next/image';
 import { ContactInfo } from '@/shared/utils/ContactInfo';
 import { Navbar } from '@/components/features/Navbar';
 import { FiPhoneCall } from 'react-icons/fi';
+import { MdEmail } from 'react-icons/md';
 
 import styles from './styles.module.scss';
 
 export const Header = () => {
+
     return (
-        <header className={styles.header}>
-            <Image src="/img/soft-logo.png" alt={'testing'} width={300} height={60} />
-            <Navbar />
-            <div className={styles.contactInfo}>
-                <p>{ ContactInfo.locationAddress }</p>
-                <p>{ ContactInfo.email }</p>
+        <header className={styles.wrapper}>
+            <div className={styles.header}>
+                <div className={styles.imageContainer}>
+                    <img src="/img/soft-logo.png" alt={'testing'} />
+                </div>
+                <div className={styles.navbar}>
+                    <Navbar />
+                </div>
+                <div className={styles.contactInfo}>{ ContactInfo.locationAddress }</div>
+                <div>
+                    <div className={styles.contactItem}>
+                        <MdEmail />
+                        <a href={`mailto:${ContactInfo.email}`}>{ ContactInfo.email }</a>
+                    </div>
+                    <div className={styles.contactItem}>
+                        <FiPhoneCall />
+                        <a href={`phone:${ContactInfo.phone}`}>{ContactInfo.phone}</a>
+                    </div>
+                </div>
             </div>
-            <div className={styles.phoneContainer}>
-                <a className={styles.contacts} href={`tel:${ContactInfo.phone}`}>
-                    { ContactInfo.phone }
-                </a>
-                <FiPhoneCall className={styles.phoneIcons}/>
+            <div className={styles.adaptiveNavbar}>
+                <Navbar />
             </div>
         </header>
     );

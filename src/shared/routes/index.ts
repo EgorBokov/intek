@@ -12,5 +12,5 @@ export type RouteType = {
 export const NavigationBarRoutes: Array<RouteType> = [
     { title: 'Главная', link: Routes.mainPage },
     { title: 'Другая', link: Routes.anotherPage },
-    { title: 'тест', link: Routes.testing },
+    { title: 'О нас', link: Routes.testing },
 ];

@@ -1,12 +1,48 @@
 @import '@/styles/globals';
+@import '@/styles/mixins';
 
 .contactInfo {
   display: flex;
   align-items: center;
+
+  @include media($lg) {
+   display: none;
+  }
+}
+
+.imageContainer {
+  max-width: 300px;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1600px;
+
+  .adaptiveNavbar {
+    display: none;
+
+    @include media($sm-tablet) {
+      display: flex;
+      justify-content: center;
+      min-height: 70px;
+      background-color: $sub-color;
+      color: $white;
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .navbar {
-  gap: 20px;
+  @include media($sm-tablet) {
+    display: none
+  }
 }
 
 .phoneContainer {
@@ -34,4 +70,10 @@
   align-items: center;
   gap: 10px;
   color: $base-color;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

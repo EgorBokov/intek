@@ -1,4 +1,5 @@
 @import '@/styles/globals.scss';
+@import '@/styles/mixins.scss';
 
 .container {
   display: flex;
@@ -31,6 +32,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 40px 0;
+
+  @include media($sm-tablet) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .productItem {
