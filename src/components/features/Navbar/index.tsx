@@ -14,7 +14,7 @@ export const Navbar: FC<INavbarProps> = ({ addClass }) => {
     return (
         <nav className={cn(styles.container, addClass || '')}>
             { NavigationBarRoutes.map(route =>
-                <Link href={route.link}>{ route.title }</Link>
+                <Link href={route.link} key={route.title}>{ route.title }</Link>
             )}
         </nav>
     )

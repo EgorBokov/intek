@@ -7,6 +7,7 @@ import { Montserrat } from 'next/font/google';
 import cn from 'classnames';
 
 import styles from './styles.module.scss';
+import Head from 'next/head';
 
 const montserrat = Montserrat({
     subsets: ['cyrillic', 'latin'],
@@ -20,12 +21,17 @@ interface IApplicationLayoutProps {
 
 export const ApplicationLayout: FC<IApplicationLayoutProps> = ({ children }) => {
     return (
-        <div className={cn(styles.container, montserrat.className)}>
-            <div>
-                <Header />
-                <ApplicationContainer slot={children} />
+        <>
+            <Head>
+                <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+            </Head>
+            <div className={cn(styles.container, montserrat.className)}>
+                <div>
+                    <Header />
+                    <ApplicationContainer slot={children} />
+                </div>
+                <Footer />
             </div>
-            <Footer />
-        </div>
+        </>
     )
 };
