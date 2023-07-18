@@ -1,0 +1,69 @@
+@import '@/styles/globals.scss';
+
+.titleWrapper {
+  color: $white;
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: $sub-color;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+  font-weight: 700;
+  font-size: 24px;
+
+  &:hover {
+    background-color: $base-yellow;
+  }
+}
+
+.doubleGis {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+  align-self: flex-end;
+
+  img {
+    max-width: 200px;
+    max-height: 40px;
+  }
+
+  span {
+    margin-top: 8px;
+  }
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subTitle {
+  font-size: 14px;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.infoContainer {
+  padding: 20px 20px 60px;
+  margin-bottom: 30px;
+  background-color: $sub-color;
+  text-align: center;
+  color: $white;
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 0;
+  }
+}

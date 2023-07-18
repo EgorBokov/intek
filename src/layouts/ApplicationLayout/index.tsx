@@ -1,6 +1,7 @@
 import { FC, ReactElement } from 'react';
 import { Header } from '@/components/widgets/Header';
 import { Footer } from '@/components/features/Footer';
+import { ApplicationContainer } from '@/components/features/ApplicationContainer';
 import { Montserrat } from 'next/font/google';
 
 import cn from 'classnames';
@@ -22,9 +23,7 @@ export const ApplicationLayout: FC<IApplicationLayoutProps> = ({ children }) => 
         <div className={cn(styles.container, montserrat.className)}>
             <div>
                 <Header />
-                <div>
-                    { children }
-                </div>
+                <ApplicationContainer slot={children} />
             </div>
             <Footer />
         </div>

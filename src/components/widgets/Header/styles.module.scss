@@ -5,7 +5,21 @@
   align-items: center;
 }
 
+.navbar {
+  gap: 20px;
+}
+
+.phoneContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px 40px;
 }
 
@@ -20,13 +34,4 @@
   align-items: center;
   gap: 10px;
   color: $base-color;
-  transition: 0.2s ease-in-out all;
-
-  &:hover {
-    letter-spacing: 0.2px;
-
-    & > .phoneIcons {
-      stroke-width: 2px;
-    }
-  }
 }

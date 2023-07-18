@@ -1,12 +1,28 @@
 @import '@/styles/globals.scss';
 
 .container {
+  padding: 30px 30px 20px;
+  background-color: $sub-color;
+  color: $white;
+}
+
+.contentWrapper {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 40px;
 }
 
 .infoBlock {
   display: flex;
   flex-direction: column;
+
+  p {
+    font-weight: 700;
+  }
+}
+
+.copyRight {
+  margin-top: 70px;
+  font-weight: 700;
+  text-align: center;
 }
