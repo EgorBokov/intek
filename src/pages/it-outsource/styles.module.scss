@@ -1,0 +1,30 @@
+@import '@/styles/globals.scss';
+
+.mainTitle {
+  background-color: $deep-yellow;
+  font-weight: 700;
+  text-align: center;
+  font-size: 24px;
+  padding: 20px 30px;
+}
+
+.subTitleContainer {
+  background-color: $sub-color;
+  padding: 40px 50px;
+  color: $white;
+  font-weight: 700;
+  text-align: center;
+  font-size: 24px;
+
+  .smallerText {
+    display: block;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+.servicesList {
+  margin-top: 30px;
+  border-top: 1px solid $sub-color;
+  padding-top: 30px;
+}

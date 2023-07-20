@@ -1,6 +1,6 @@
 export const Routes = {
   mainPage: '/',
-  anotherPage: '/another-page',
+  outsource: '/it-outsource',
   testing: '/testing',
 };
 
@@ -11,6 +11,6 @@ export type RouteType = {
 
 export const NavigationBarRoutes: Array<RouteType> = [
     { title: 'Главная', link: Routes.mainPage },
-    { title: 'Другая', link: Routes.anotherPage },
+    { title: 'IT Аутсорс', link: Routes.outsource },
     { title: 'О нас', link: Routes.testing },
 ];

@@ -25,7 +25,7 @@ export const Header = () => {
                     </div>
                     <div className={styles.contactItem}>
                         <FiPhoneCall />
-                        <a href={`phone:${ContactInfo.phone}`}>{ContactInfo.phone}</a>
+                        <a href={`tel:${ContactInfo.phone}`}>{ContactInfo.phone}</a>
                     </div>
                 </div>
             </div>
