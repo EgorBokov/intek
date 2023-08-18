@@ -1,7 +1,8 @@
 export const Routes = {
-  mainPage: '/',
-  outsource: '/it-outsource',
-  testing: '/testing',
+    mainPage: '/',
+    outsource: '/it-outsource',
+    accompaniment: '/accompaniment',
+    its: '/1c-its',
 };
 
 export type RouteType = {
@@ -12,5 +13,6 @@ export type RouteType = {
 export const NavigationBarRoutes: Array<RouteType> = [
     { title: 'Главная', link: Routes.mainPage },
     { title: 'IT Аутсорс', link: Routes.outsource },
-    { title: 'О нас', link: Routes.testing },
+    { title: 'Сопровождение 1С', link: Routes.accompaniment },
+    { title: '1С ИТС', link: Routes.its },
 ];

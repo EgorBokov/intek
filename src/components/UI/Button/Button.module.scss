@@ -1,0 +1,20 @@
+@import '@/styles/globals.scss';
+@import '@/styles/mixins';
+
+.button {
+  background-color: $base-yellow;
+  color: #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  min-height: 50px;
+  font-size: 16px;
+
+  &:hover {
+    background-color: $sub-color;
+    color: $white;
+  }
+}

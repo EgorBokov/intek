@@ -4,4 +4,12 @@
   display: flex;
   align-items: center;
   gap: 20px;
+
+  .activeLink {
+    color: #000;
+  }
+}
+
+.activeLink {
+  background-color: $base-yellow;
 }

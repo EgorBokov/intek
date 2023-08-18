@@ -8,9 +8,7 @@ const App: NextPage = () => {
           <Head>
               <title>Интек | Официальный дистрибьютор 1С в России</title>
           </Head>
-          <div>
-              <ProductPresentation />
-          </div>
+          <ProductPresentation />
       </>
   );
 }

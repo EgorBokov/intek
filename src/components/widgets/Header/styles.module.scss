@@ -24,24 +24,41 @@
   flex-direction: column;
   margin: 0 auto;
   max-width: 1600px;
+}
 
-  .adaptiveNavbar {
-    display: none;
-
-    @include media($sm-tablet) {
-      display: flex;
-      justify-content: center;
-      min-height: 70px;
-      background-color: $sub-color;
-      color: $white;
-      margin-bottom: 30px;
-    }
-  }
+.navbarContainer {
+  display: flex;
+  justify-content: center;
+  min-height: 70px;
+  background-color: $sub-color;
+  color: $white;
+  margin-bottom: 30px;
+  border-bottom: 3px solid $base-yellow;
 }
 
 .navbar {
-  @include media($sm-tablet) {
-    display: none
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  > a {
+    height: 100%;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    transition: 0.3s ease all;
+
+    &:hover {
+      background-color: $base-yellow;
+      color: #000;
+    }
   }
 }
 

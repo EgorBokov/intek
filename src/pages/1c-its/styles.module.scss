@@ -1,0 +1,80 @@
+@import '@/styles/globals';
+@import '@/styles/mixins';
+
+.container {
+  @include box-container($base-yellow);
+  color: $black;
+  text-align: center;
+  padding: 10px;
+  transition: 0.3s ease all;
+
+  &:hover {
+    background-color: $sub-color;
+    color: $white;
+  }
+
+  .description {
+    font-size: 24px;
+    margin: 0;
+  }
+}
+
+.title {
+  @include title(20px);
+}
+
+.goodsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.controlSoft {
+  @include box-container($sub-color);
+  @include title(24px);
+  color: white;
+  padding-bottom: 20px;
+}
+
+.controlSoftContainer {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.campaignContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0 50px;
+}
+
+.campaignItem {
+  background-color: $white;
+  box-shadow: 2px 2px 13px rgba(0,0,0, 0.4);
+  padding: 20px 30px;
+  flex-basis: 20%;
+  text-align: center;
+  transition: 0.3s ease all;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: $sub-color;
+    color: $white;
+    font-weight: 600;
+  }
+}
+
+.textInfoContainer {
+  font-size: 15px;
+  text-align: center;
+  max-width: 700px;
+
+  p {
+    margin: 0;
+  }
+}

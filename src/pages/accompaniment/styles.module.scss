@@ -1,0 +1,20 @@
+@import '@/styles/globals.scss';
+@import '@/styles/mixins';
+
+.infoTitle {
+  @include title(24px);
+  text-align: center;
+}
+
+.subInfo {
+  text-align: center;
+  p {
+    margin: 0;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

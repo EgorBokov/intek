@@ -14,9 +14,6 @@ export const Header = () => {
                 <div className={styles.imageContainer}>
                     <img src="/img/soft-logo.png" alt={'testing'} />
                 </div>
-                <div className={styles.navbar}>
-                    <Navbar />
-                </div>
                 <div className={styles.contactInfo}>{ ContactInfo.locationAddress }</div>
                 <div>
                     <div className={styles.contactItem}>
@@ -29,8 +26,8 @@ export const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles.adaptiveNavbar}>
-                <Navbar />
+            <div className={styles.navbarContainer}>
+                <Navbar addClass={styles.navbar} />
             </div>
         </header>
     );
