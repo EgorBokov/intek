@@ -10,7 +10,7 @@ export const ProductPresentation = () => {
     return (
         <div className={styles.container}>
             <div className={styles.headerWrapper}>
-                <Image src={'/img/1c.png'} width={230} height={100} alt="1С Логотип" />
+                <Image src={'/img/1c.png'} width={230} height={100} alt="1С Логотип" priority />
                 <div className={styles.titles}>
                     <div className={styles.titleWrapper}>
                         Продажа, сопровождение и доработка 1С

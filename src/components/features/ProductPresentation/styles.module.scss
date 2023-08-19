@@ -25,13 +25,19 @@
   align-self: flex-end;
 
   img {
-    max-width: 200px;
-    max-height: 40px;
+    max-height: 70px;
   }
 
   span {
     margin-top: 8px;
   }
+}
+
+.goodsContainer {
+  background-color: $pale-gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .titles {
@@ -53,6 +59,16 @@
   @include media($sm-tablet) {
     flex-wrap: wrap;
   }
+}
+
+.goodCard {
+  background-color: $white;
+  box-shadow: 2px 2px 15px rgba(0,0,0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 20%;
+  padding: 20px;
 }
 
 .infoContainer {

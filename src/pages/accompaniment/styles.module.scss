@@ -6,11 +6,30 @@
   text-align: center;
 }
 
+.title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.titleContainer {
+  margin-bottom: 40px;
+}
+
+.quote {
+  padding-left: 20px;
+  font-style: italic;
+  font-size: 14px;
+}
+
 .subInfo {
   text-align: center;
   p {
     margin: 0;
   }
+}
+
+.mainContainer {
+  margin-top: 40px;
 }
 
 .buttonContainer {

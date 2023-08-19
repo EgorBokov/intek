@@ -25,7 +25,7 @@ export default function ItsPage() {
                     <li>Вы будете сдавать отчетность в корректных формах. Наши сервис-инженеры отслеживают выпуск обновлений и дистанционно устанавливают их.</li>
                 </ul>
                 <div className={styles.controlSoftContainer}>
-                    <Image src={'/img/1c.png'} width={230} height={100} alt="1С Логотип" />
+                    <Image src={'/img/1c.png'} width={230} height={100} alt="1С Логотип" className={styles.image} />
                     <div className={styles.controlSoft}>
                        Возьмем Вашу 1С на сопровождение
                     </div>

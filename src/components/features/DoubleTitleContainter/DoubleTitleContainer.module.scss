@@ -1,0 +1,17 @@
+@import '@/styles/globals.scss';
+@import '@/styles/mixins';
+
+.contractsInfo {
+  div:first-of-type {
+    @include box-container($base-yellow);
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+
+  div:last-of-type {
+    @include box-container($sub-color);
+    font-size: 16px;
+    color: $white;
+  }
+}
